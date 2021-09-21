@@ -1,0 +1,25 @@
+.radio-label {
+  width: 100%;
+  align-items: center;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.radio-label-circle {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 9999px;
+  margin-right: 8px;
+  padding: 4px;
+}
+
+.radio-label-radio {
+  border-radius: 9999px;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+}
+
+.radio-label-radio.selected {
+  /* For selected radio */
+  background-color: #00449E;
+}

@@ -1,0 +1,64 @@
+.device-list-holder {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+  width: 100%;
+}
+
+.device-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.device-header p {
+  align-self: flex-start;
+}
+
+.device-header .add-device {
+  align-self: center;
+}
+
+.device-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.device-item {
+  /* There will be 3 devices per row */
+  flex-basis: 40%;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.device-details {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 8px 0px;
+}
+
+.device-prefer {
+  box-shadow: 0 0 10px #237fca; 
+}
+
+.device-item-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.device-item-footer div {
+  margin-left: 8px;
+  margin-bottom: 8px;
+}

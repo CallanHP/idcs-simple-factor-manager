@@ -1,0 +1,48 @@
+.train {
+  display: flex;
+}
+
+.train-step {
+  /* Make all steps have the same width */
+  flex: 1;
+}
+
+.train-dot {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.train-step:first-child .train-connector:first-child,
+.train-step:last-child .train-connector:last-child {
+  background-color: transparent;
+}
+
+.train-connector {
+  flex: 1;
+  height: 1px;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.train-number {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: 9999px;
+  height: 32px;
+  width: 32px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.current-train-step {
+  box-shadow: 0 0 10px #237fca; 
+}
+
+.train-step-label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}

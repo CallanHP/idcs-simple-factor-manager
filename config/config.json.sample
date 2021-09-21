@@ -1,0 +1,19 @@
+{
+    "idcs":{
+        "base_url": "https://idcs-<instance>.identity.oraclecloud.com",
+        "client_id": "id_here",
+        "client_secret": "secret_here",
+        "required_scopes":[
+            "urn:opc:idm:role.Me"
+        ]
+    },
+    "session":{
+        "key":"secret key for cookie signing"
+    },
+    "ssl":{
+        "useSSL":true,
+        "publicCertPath":"./path to cert PEM",
+        "privateKeyPath":"./path to key PEM"
+    },
+    port: 8080
+}

@@ -1,0 +1,32 @@
+.status-holder {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  justify-content: center;
+}
+
+.status-layout {
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.status-layout p {
+  text-align: left;
+  padding: 8px;
+}
+
+.status-indicator {
+  border-radius: 9999px;
+  height: 16px;
+  width: 16px;
+  margin: 8px;
+}
+
+.status-indicator.status-good {
+  background-color: rgba(81, 223, 25, 0.808);
+}
+
+.status-indicator.status-bad {
+  background-color: rgba(235, 16, 16, 0.808);
+}

@@ -1,0 +1,51 @@
+{
+  "name": "idcs-simple-custom-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "server-watch": "node_modules/.bin/browser-refresh ./dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.6.0",
+    "buffer": "^6.0.3",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "log4js": "^4.5.1",
+    "node-fetch": "^2.6.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-bootstrap": "^1.6.1",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/runtime": "^7.15.3",
+    "acorn": "^6.4.2",
+    "babel-loader": "^8.2.2",
+    "browser-refresh": "^1.7.3",
+    "copy-webpack-plugin": "^5.1.2",
+    "css-loader": "^3.6.0",
+    "exports-loader": "^0.7.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "imports-loader": "^0.8.0",
+    "json-loader": "^0.5.7",
+    "mini-css-extract-plugin": "^0.7.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-node-externals": "^1.7.2",
+    "whatwg-fetch": "^3.6.2"
+  }
+}

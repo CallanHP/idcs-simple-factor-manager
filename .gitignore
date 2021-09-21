@@ -1,0 +1,11 @@
+#don't commit the config with id/secret...
+config/config.json
+#ignore node modules
+node_modules/
+#ignore build outputs
+dist/
+#ignore test scraps
+scrap/
+#ignore testing certs
+sslcert/private.key
+sslcert/public.crt

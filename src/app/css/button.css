@@ -1,0 +1,92 @@
+.flat-button {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.flat-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.flat-button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flat-button.disabled {
+  background-color: rgba(0, 0, 0, 0.1);
+  color:rgba(0, 0, 0, 0.3);
+}
+
+.flat-button.action {
+  background-color: rgb(1, 109, 176);
+  color: white;
+}
+
+.flat-button.action:hover {
+  background-color: rgb(1, 72, 116);
+}
+
+.flat-button.action:active {
+  background-color: rgb(1, 40, 65);
+}
+
+.flat-button.action.disabled {
+  background-color: rgb(1, 40, 65);
+  color:rgba(255, 255, 255, 0.3);
+}
+
+
+.flat-button.warning {
+  background-color: rgb(176, 1, 1);
+  color: white;
+}
+
+.flat-button.warning:hover {
+  background-color: rgb(114, 2, 2);
+}
+
+.flat-button.warning:active {
+  background-color: rgb(70, 0, 0);
+}
+
+.flat-button.warning.disabled {
+  background-color: rgb(70, 0, 0);
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.small-button {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 3px;
+  border-radius: 3px;
+  cursor: default;
+  font-size: 0.8em;
+}
+
+.small-button.disabled {
+  background-color: rgba(0, 0, 0, 0.1);
+  color:rgba(0, 0, 0, 0.3);
+}
+
+.small-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.small-button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.inline-input-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.inline-input-button .flat-button {
+  margin: 0 3px;
+}
+
+.inline-input-button .small-button {
+  margin: 0 3px;
+}

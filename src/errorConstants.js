@@ -1,0 +1,34 @@
+/*
+ * List of error constants to use throughout.
+ */
+
+//IDCS Processing errors
+module.exports.INVALID_IDCS_CONFIG = "EBADCONFIG";
+module.exports.IDCS_AUTHN_FAILED = "EUNAUTH";
+module.exports.ERROR_PARSING_RESPONSE_FROM_IDCS = "EBADPARSE";
+module.exports.NO_TOKEN_FROM_IDCS = "ENOTOKEN";
+module.exports.NO_KEY_FROM_IDCS = "ENOKEY";
+module.exports.IDCS_KEY_INVALID = "EKEYINVALID";
+module.exports.SUBMIT_CREDENTIALS_ARGS_INVALID = "EBADCREDS";
+module.exports.IDCS_INTERNAL_ERROR_CRED_SUBMIT = "EIDCSCRED";
+module.exports.IDCS_CONNECT_ERROR_CRED_SUBMIT = "ECONNCRED";
+module.exports.IDCS_BAD_USER_FIDO_READ = "EGETUREG";
+module.exports.IDCS_CONNECT_USER_FIDO_READ = "ECONNATTR";
+
+//Invocation errors
+module.exports.INVALID_OPERATION_FOR_ENDPOINT = "EINVALIDOP";
+module.exports.SIGNATURE_VALIDATION_FAILED_FOR_LOGINCTX = "ELOGCTXSIG";
+module.exports.UNABLE_TO_PARSE_LOGINCTX = "EINVLOGCTX";
+module.exports.LOGIN_POST_MISSING_FIELDS = "EINVLOGREQ";
+module.exports.UNABLE_TO_PARSE_REGISTRATION_CLIENT_DATA = "EREGCPAR";
+module.exports.REG_NO_STATE_IN_CACHE = "EREGNOCTX";
+module.exports.CSRF_STATE_MISMATCH = "ECSRFFAIL";
+module.exports.CALLBACK_MISSING_PARAMS = "EBADCBPAR"
+
+
+module.exports.CRED_SUBMISSION_FAILED = "ECREDFAIL";
+module.exports.CRED_SUBMISSION_NO_STATUS = "ENOCREDSTAT";
+
+//WebAuthN Validation errors
+module.exports.WEBAUTHN_WRONG_CLIENT_REG_TYPE = "EREGBTYP";
+module.exports.WEBAUTHN_REG_CHALLENGE_MISMATCH = "EREGBCHA";

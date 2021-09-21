@@ -1,0 +1,22 @@
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0.3);
+  padding: 8px;
+}
+
+.modal-content {
+  padding: 8px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid rgba(0, 0, 0.3);
+  padding: 8px;
+}
+
+.modal-footer div {
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
