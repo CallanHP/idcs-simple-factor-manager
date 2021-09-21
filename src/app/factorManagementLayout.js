@@ -178,15 +178,10 @@ export default class FactorManagementLayout extends Component {
       }
       //Crude object clone
       let newSettings = JSON.parse(JSON.stringify(this.state.mfaSettings));
-      newSettings.devices.push(newDevice);
-      //PUSH enrolls TOPT by default
-      if(factor == factorNames.onlineApp){
-        newDevice.factorType = "TOPT";
-        newSettings.devices.push(newDevice);
-      }
-      //SMS enrolls PHONE_CALL by default
-      if(factor == factorNames.phone){
-        newDevice.factorType = "PHONE_CALL";
+      newSettings.devices.push(JSON.parse(JSON.stringify(newDevice)));
+      //Check for additional factors enrolled by this factor
+      for( additionalFactor of factorEnrollmentDetails[factor].additionalFactorsEnrolled ){
+        newDevice.factorType = additionalFactor;
         newSettings.devices.push(newDevice);
       }
       newSettings.preferredAuthenticationFactor = res.mfaPreferredAuthenticationFactor,

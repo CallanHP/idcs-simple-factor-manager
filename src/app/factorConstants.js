@@ -18,7 +18,9 @@ export const factorEnrollmentDetails = {
       body.phoneNumber = options[1];
       body.isDeviceOffline = true;
       return body;
-    }
+    },
+    //SMS enrolls PHONE_CALL by default
+    additionalFactorsEnrolled: ["PHONE_CALL"]
   },
   OFFLINE_APP:{
     enrollmentDisplay: "Enroll an alternative mobile authenticator (i.e. Google Authenticator)",
@@ -32,7 +34,8 @@ export const factorEnrollmentDetails = {
     mapEnrollOptions: (body, options) => {
       body.isDeviceOffline = true;
       return body;
-    }
+    },
+    additionalFactorsEnrolled: []
   },
   ONLINE_APP:{
     enrollmentDisplay: "Enroll Oracle Mobile Authenticator",
@@ -44,7 +47,8 @@ export const factorEnrollmentDetails = {
     },
     mapEnrollOptions: (body, options) => {
       return body;
-    }
+    },
+    additionalFactorsEnrolled: ["TOPT"]
   },
   BYPASS:{
     enrollmentDisplay: "Add a Bypass Code",
@@ -56,7 +60,8 @@ export const factorEnrollmentDetails = {
     },
     mapEnrollOptions: (body, options) => {
       return body;
-    }
+    },
+    additionalFactorsEnrolled: []
   },
   SECURITY_QUESTIONS:{
     enrollmentDisplay: "Add Security Questions to your Account",
@@ -68,7 +73,8 @@ export const factorEnrollmentDetails = {
     },
     mapEnrollOptions: (body, options) => {
       return body;
-    }
+    },
+    additionalFactorsEnrolled: []
   }
 }
 
